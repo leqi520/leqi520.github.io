@@ -1,0 +1,234 @@
+/* 清除所有元素的内外边距 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* 设置 HTML 和 BODY 的宽高为 100%，并隐藏溢出内容 */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* 创建一个容器，并设置其宽高为 100%，设置其高度为 500%，使用绝对定位，将顶部置于 0 位置 */
+.container {
+    width: 100%;
+    height: 500%;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s ease;
+}
+
+/* 创建一个 section1 的样式，设置背景颜色和背景图片 */
+.section1 {
+    background-color: rebeccapurple;
+    background: url("img/1.jpg");
+}
+
+/* 创建一个 section2 的样式，设置背景颜色和背景图片 */
+.section2 {
+    background-color: skyblue;
+    background: url("img/2.jpg");
+}
+
+/* 创建一个 section3 的样式，设置背景颜色和背景图片 */
+.section3 {
+    background-color: red;
+    background: url("img/3.jpg");
+}
+
+/* 创建一个 section4 的样式，设置背景颜色和背景图片 */
+.section4 {
+    background-color: orange;
+    background: url("img/4.jpg");
+}
+
+/* 创建一个 section5 的样式，设置背景颜色和背景图片 */
+.section5 {
+    background-color: lightgreen;
+    background: url(https://api.xiaobaibk.com/api/pic/?pic=acg);
+}
+
+/* 创建一个通用的 section 样式，设置宽高、对齐方式和背景图片的大小 */
+.section {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+/* 创建一个 controls 的样式，设置其位置、对齐方式、列表样式、字体样式、背景颜色、前景颜色和边框半径 */
+.controls {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    list-style: none;
+}
+
+/* 设置 controls 列表项的宽高、文本对齐方式、字体样式、背景颜色、前景颜色和边框半径 */
+.controls li {
+    width: 50px;
+    height: 50px;
+    font: bold 22px/50px '宋体';
+    text-align: center;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* 设置相邻的 controls 列表项之间的 margin-top 为 5px */
+.controls li+li {
+    margin-top: 5px;
+}
+
+/* 设置当前选中的 controls 列表项的背景颜色和前景颜色 */
+.controls li.active {
+    background-color: #fff;
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+/* 导航栏 */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(219, 216, 216, 0.8);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 导航栏中间文本 */
+.navbar-bilibili {
+    font-size: 1.9em;
+    color: #e9b5e6;
+    text-decoration: none;
+    text-align: center; /* 添加此属性以使文字居中 */
+    margin: 0 0;
+}
+
+
+/* 导航栏项 */
+.navbar-item {
+    color: #333;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+/* 导航栏分割线 */
+.navbar-divider {
+    height: 4px;
+    width: 25%;
+    background-color: rgba(218, 55, 55, 0.1);
+    margin: 0 0px;
+}
+
+/* 主页和目录项 */
+.navbar-item:hover {
+    font-size: 2.0em;
+    color: #FF69B4;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+/* 主页和目录项初始状态缩放 */
+.navbar-item {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+/* 主页和目录项悬停时缩放 */
+.navbar-item:hover {
+    transform: scale(1.1);
+}
+
+/* 主页和目录恢复原状动画 */
+.navbar-item:not(:hover) {
+    transform: scale(1);
+    transition: font-size 0.3s ease, transform 0.3s ease;
+}
+
+
+
+/* 头像容器层 */
+.avatar-wrapper {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 头像 */
+.avatar {
+    width: 200px;
+    height: 200px;
+    background-image: url(avatar.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: circle(50% at 50% 50%);
+}
+
+/* 姓名 */
+.name {
+    font-size: 9em;
+    font-weight: bold;
+    color: #ccdaa6a2;
+    text-align: center;
+    object-position: center;
+}
+
+
+
+
+
+/* 时间 */
+.time {
+    background-color: rgb(255, 255, 255,0);
+    padding: 10px;
+    text-align: center;
+    font-size: 6em;
+    border-radius: 5px;
+    background-position: -30%;
+}
+
+
+
+
+/* 关于网站 */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    z-index: 1000; /* 添加此属性以确保内容在页面其他元素上方 */
+}
+
+/* 去掉文本超链接后的下划线 */
+a{
+    text-decoration: none;
+    }

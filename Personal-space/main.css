@@ -1,0 +1,17 @@
+.bady,html {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: felx;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.text {
+    font-size: 100px;
+    text-align: center;
+}

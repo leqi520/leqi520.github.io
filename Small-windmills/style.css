@@ -1,0 +1,350 @@
+/* 重置默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 页面主体样式 */
+body {
+    height: 100vh; /* 设置页面高度为视口高度 */
+    display: flex; /* 使用弹性布局 */
+    justify-content: center; /* 水平居中对齐 */
+    align-items: center; /* 垂直居中对齐 */
+    background: url("oen.jpg"); /* 设置背景图片 */
+}
+
+/* 轮播图容器 */
+.container {
+    display: flex; /* 使用弹性布局 */
+    width: 1000vw; /* 设置宽度为视口宽度的1000倍 */
+    max-width: 1800px; /* 设置最大宽度为1300像素 */
+    height: 800px; /* 设置高度为600像素 */
+    overflow: hidden; /* 隐藏溢出内容 */
+}
+
+.container .tpa{
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    width: 400px;;
+    overflow: hidden;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    text-align: center;
+    height: 50px;
+    font-size: 40px;
+    display:inline-block;
+    font-weight:bold;
+    color:#def;
+    text-shadow:0 0 1px currentColor,-1px -1px 1px #000,0 -1px 1px #000,1px -1px 1px #000,1px 0 1px #000,1px 1px 1px #000,0 1px 1px #000,-1px 1px 1px #000,-1px 0 1px #000;
+    -webkit-filter:url(#diff1);
+    filter:url(#diff1);
+}
+
+
+
+/* 轮播项样式 */
+.item {
+    position: relative; /* 设置相对定位 */
+    width: 120px; /* 设置宽度为120像素 */
+    margin: 10px; /* 设置外边距为10像素 */
+    cursor: pointer; /* 设置鼠标样式为手型 */
+    border-radius: 30px; /* 设置边框圆角为30像素 */
+    background-size: cover; /* 背景图片自适应尺寸 */
+    background-position: center; /* 背景图片居中对齐 */
+    transition: 0.7s cubic-bezier(0.05, 0.61, 0.41, 0.95); /* 过渡效果 */
+    overflow: hidden; /* 隐藏溢出内容 */
+}
+
+/* 轮播项阴影样式 */
+.item .shadow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+/* 轮播项内容样式 */
+.item .content {
+    display: flex;
+    position: absolute;
+    left: 10px;
+    right: 0;
+    bottom: 10px;
+    height: 40px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+/* 轮播项头像样式 */
+.item .content .one {
+    min-width: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url("http://q1.qlogo.cn/g?b=qq&nk=2681040396&s=100");
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    transform: translateY(-60%);
+    z-index: 999;
+}
+
+.item .content .two {
+    min-width: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url("http://q1.qlogo.cn/g?b=qq&nk=1046617962&s=100");
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    transform: translateY(-60%);
+    z-index: 999;
+}
+
+.item .content .three {
+    min-width: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url("http://q1.qlogo.cn/g?b=qq&nk=1046617962&s=100");
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    transform: translateY(-60%);
+    z-index: 999;
+}
+
+.item .content .four {
+    min-width: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url("http://q1.qlogo.cn/g?b=qq&nk=1046617962&s=100");
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    transform: translateY(-60%);
+    z-index: 999;
+}
+
+.item .content .five {
+    min-width: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url("http://q1.qlogo.cn/g?b=qq&nk=1046617962&s=100");
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    transform: translateY(-60%);
+    z-index: 999;
+}
+
+.item .content .six {
+    min-width: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url("http://q1.qlogo.cn/g?b=qq&nk=1046617962&s=100");
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    transform: translateY(-60%);
+    z-index: 999;
+}
+
+.item .content .seven {
+    min-width: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url("http://q1.qlogo.cn/g?b=qq&nk=1046617962&s=100");
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    transform: translateY(-60%);
+    z-index: 999;
+}
+
+.item .content .eight {
+    min-width: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url("http://q1.qlogo.cn/g?b=qq&nk=1046617962&s=100");
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    transform: translateY(-60%);
+    z-index: 999;
+}
+
+/* 轮播项图标颜色样式 */
+.item:nth-child(1) .fa {
+    color: #fc6e51;
+}
+.item:nth-child(2) .fa {
+    color: #ffce54;
+}
+.item:nth-child(3) .fa {
+    color: #2ecc71;
+}
+.item:nth-child(4) .fa {
+    color: #5d9cec;
+}
+.item:nth-child(5) .fa {
+    color: #ac92ec;
+}
+
+/* 轮播项文本样式 */
+.item .content .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    color: #fff;
+    width: 100%;
+    transform: translateY(-60%);
+}
+
+.item .content .text div {
+    width: calc(100% - 70px);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.item .content .text .tit {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.item .content .text .sub {
+    transition-delay: 0.1s;
+}
+
+/* 选中态样式 */
+.item.active {
+    flex: 1;
+    margin: 0;
+    border-radius: 30px;
+}
+
+.item.active .shadow {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.35) 65%, transparent);
+}
+
+.item.active .content {
+    bottom: 20px;
+    left: 20px;
+}
+
+.item.active .content .text div {
+    opacity: 1;
+}
+
+/* 关于网站 */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    z-index: 1000; /* 添加此属性以确保内容在页面其他元素上方 */
+}
+
+
+/* 导航栏 */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(219, 216, 216, 0.8);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 导航栏中间文本 */
+.navbar-bilibili {
+    font-size: 1.9em;
+    color: #e9b5e6;
+    text-decoration: none;
+    text-align: center; /* 添加此属性以使文字居中 */
+    margin: 0 0;
+}
+
+
+/* 导航栏项 */
+.navbar-item {
+    color: #333;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+/* 导航栏分割线 */
+.navbar-divider {
+    height: 4px;
+    width: 25%;
+    background-color: rgba(218, 55, 55, 0.1);
+    margin: 0 0px;
+}
+
+/* 主页和目录项 */
+.navbar-item:hover {
+    font-size: 2.0em;
+    color: #FF69B4;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+/* 主页和目录项初始状态缩放 */
+.navbar-item {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+/* 主页和目录项悬停时缩放 */
+.navbar-item:hover {
+    transform: scale(1.1);
+}
+
+/* 主页和目录恢复原状动画 */
+.navbar-item:not(:hover) {
+    transform: scale(1);
+    transition: font-size 0.3s ease, transform 0.3s ease;
+}
+
+/* 去掉文本超链接后的下划线 */
+a{
+    text-decoration: none;
+    }
