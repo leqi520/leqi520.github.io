@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.header {
+    height: 500px;
+    padding: 2rem; 
+    position: relative;
+    background-image:-webkit-linear-gradient(top, #58cc92,#33ff00,#5fc9bb);
+    -webkit-background-clip:text;
+    font-size: 20px;
+    margin:100px 0;
+    -webkit-text-fill-color:transparent;
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.about-section,
+.achievements-section,
+.gallery-section,
+.contact-section {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 30px;
+}
+
+.achievements-section ul,
+.contact-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.achievements-section li,
+.contact-section li {
+    margin-bottom: 0.5rem;
+}
+
+.gallery-section {
+    overflow: hidden;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-img {
+    width: 300px;
+    margin: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 赖皮头像的变换 */
+img:hover { 
+    cursor: pointer; 
+}
+
+/* 关于网站 */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    z-index: 1000; /* 添加此属性以确保内容在页面其他元素上方 */
+}
