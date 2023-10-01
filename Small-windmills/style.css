@@ -100,7 +100,7 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: url("http://q1.qlogo.cn/g?b=qq&nk=1046617962&s=100");
+    background: url("http://q1.qlogo.cn/g?b=qq&nk=156321658&s=100");
     display: flex;
     object-fit: cover;
     justify-content: center;
@@ -130,7 +130,7 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: url("http://q1.qlogo.cn/g?b=qq&nk=1046617962&s=100");
+    background: url("http://q1.qlogo.cn/g?b=qq&nk=1613791264&s=100");
     display: flex;
     object-fit: cover;
     justify-content: center;
@@ -348,3 +348,15 @@ body {
 a{
     text-decoration: none;
     }
+
+/* 关于网站 */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 0, 0);
+    padding: 10px;
+    text-align: center;
+    z-index: 1000; /* 添加此属性以确保内容在页面其他元素上方 */
+}

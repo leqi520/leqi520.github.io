@@ -48,7 +48,7 @@ body {
 /* 创建一个 section5 的样式，设置背景颜色和背景图片 */
 .section5 {
     background-color: lightgreen;
-    background: url(https://api.xiaobaibk.com/api/pic/?pic=acg);
+    background: url(https://t.mwm.moe/pc);
 }
 
 /* 创建一个通用的 section 样式，设置宽高、对齐方式和背景图片的大小 */

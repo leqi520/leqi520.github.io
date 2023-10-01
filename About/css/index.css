@@ -1,9 +1,10 @@
 /* CSS Document */
 
-{
+.body {
 	margin: 0;
 	padding: 0;
 }
+
 a{
 	text-decoration: none;
 }
@@ -15,7 +16,7 @@ a{
             clear: both;
 }
 .clearfix{
-			*zoom: 1;
+			zoom: 1;
 }
 body{
 	background: url(../img/bg.jpg) no-repeat;
