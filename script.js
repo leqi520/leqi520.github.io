@@ -48,11 +48,14 @@ function changeColor(index) {
 }
 
 
-
 // 头像
-$(document).ready(function () {
-    $('.avatar').css('background-image', `url(avatar.jpg)`);
+document.addEventListener('DOMContentLoaded', function () {
+    var avatarElement = document.querySelector('.avatar');
+    if (avatarElement) {
+        avatarElement.style.backgroundImage = 'url(avatar.jpg)';
+    }
 });
+
 
 // 时间
 function showCurrentTime() {

@@ -49,6 +49,7 @@ body {
 .section5 {
     background-color: lightgreen;
     background: url(https://t.mwm.moe/pc);
+    text-align: center;
 }
 
 /* 创建一个通用的 section 样式，设置宽高、对齐方式和背景图片的大小 */
@@ -133,6 +134,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
+    text-align: center;
 }
 
 /* 导航栏分割线 */
@@ -229,9 +231,9 @@ body {
 }
 
 /* 去掉文本超链接后的下划线 */
-.a{
+a{
     text-decoration: none;
-}
+    }
 
 
 /* 赖皮 */
