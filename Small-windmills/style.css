@@ -349,13 +349,13 @@ a{
     text-decoration: none;
     }
 
-/* 关于网站 */
+/* 解释权 */
 .footer {
     position: fixed;
     bottom: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0);
-    color: rgb(255, 0, 0);
+    color: #000000;
     padding: 10px;
     text-align: center;
     z-index: 1000; /* 添加此属性以确保内容在页面其他元素上方 */

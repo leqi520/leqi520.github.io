@@ -66,21 +66,36 @@ body {
     border-radius: 10px;			/* 设置圆角矩形 */
 }
 
+/* 照片画廊 */
 .gallery-section {
     overflow: hidden;
-    border-radius: 10px;			/* 设置圆角矩形 */
+    border-radius: 10px;            /* 设置圆角矩形 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .image-wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .gallery-img {
-    width: 300px;
+    max-width: 100%; /* 图片宽度相对于其包含块的百分比 */
+    width: 100%; /* 设置图片宽度为相对于父容器的120% */
+    height: auto; /* 保持纵横比 */
     margin: 0.5rem;
     transition: all 0.3s ease-in-out;
 }
+
+@media (min-width: 768px) {
+    .gallery-img {
+        max-width: 600px; /* 图片在大屏幕上最大宽度为600px */
+        width: 100%;
+    }
+}
+
 
 /* 赖皮头像的变换 */
 img:hover { 
@@ -125,3 +140,18 @@ img:hover {
     color: #FFD700;
     letter-spacing: 2px;
 }
+
+/* 照片垂直排列 */
+.box {
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+}
+.box ul {
+    width: 800px;
+    height: auto;
+    margin: 0 auto;}
+.box ul li {width: 100%;
+    height: auto;
+    float: left;
+    text-align: center;}
