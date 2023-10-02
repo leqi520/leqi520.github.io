@@ -1,3 +1,7 @@
+html,body {
+    cursor: url(cur/normal.cur),pointer;
+}
+
 /* 清除所有元素的内外边距 */
 * {
     padding: 0;

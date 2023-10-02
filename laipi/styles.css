@@ -19,7 +19,8 @@ body {
     padding: 2rem; 
     position: relative;
     background-image:-webkit-linear-gradient(top, #58cc92,#33ff00,#5fc9bb);
-    -webkit-background-clip:text;
+    -webkit-background-clip: text;
+    background-clip: text;
     font-size: 20px;
     margin:100px 0;
     -webkit-text-fill-color:transparent;
@@ -49,6 +50,7 @@ body {
     margin-bottom: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-size: 30px;
+    border-radius: 10px;			/* 设置圆角矩形 */
 }
 
 .achievements-section ul,
@@ -61,10 +63,12 @@ body {
 .achievements-section li,
 .contact-section li {
     margin-bottom: 0.5rem;
+    border-radius: 10px;			/* 设置圆角矩形 */
 }
 
 .gallery-section {
     overflow: hidden;
+    border-radius: 10px;			/* 设置圆角矩形 */
 }
 
 .image-wrapper {
@@ -101,6 +105,7 @@ img:hover {
     bottom: 60px;		/* 距离浏览器窗口下边框20px */
     right: 20px;		/* 距离浏览器窗口右边框20px */
   }
+
   .go-top a {
     display: block;			/* 将<a>标签设为块元素，用于美化样式 */
     text-decoration: none;		/* 取消超链接下画线 */
@@ -111,3 +116,12 @@ img:hover {
     border-radius: 5px;			/* 设置圆角矩形 */
     letter-spacing: 2px;		/* 设置文字间距 */
   }
+
+.red {
+    color: #33ff00;
+}
+
+.Golden_sentences {
+    color: #FFD700;
+    letter-spacing: 2px;
+}
