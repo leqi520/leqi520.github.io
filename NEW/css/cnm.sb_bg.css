@@ -1,122 +1,44 @@
 #xuna{
-        position: fixed;
-        top: -50%;
-        left: -50;
-        height: 150%;
-        width: 100%;
-        overflow: hidden;
-        z-index: 9;
-        pointer-events: none;
-        display: none;
-    }
+	position: fixed;
+	top: -50%;
+	left: -50;
+	height: 150%;
+	width: 100%;
+	overflow: hidden;
+	z-index: 9;
+	pointer-events: none;
+	display: none;
+}
 
-    label.switch {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        cursor: pointer;
-        z-index: 999;
-    }
-    
-    /* 初始样式 */
-.button-container {
-        display: flex;
-        align-items: center;
-      }
-      
-      .switch {
-        position: relative;
-        display: inline-block;
-        width: 60px;
-        height: 34px;
-      }
-      
-      .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #ccc;
-        -webkit-transition: .4s;
-        transition: .4s;
-      }
-      
-      .slider:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
-      }
-      
-      input:checked + .slider {
-        background-color: #2196F3;
-      }
-      
-      input:focus + .slider {
-        box-shadow: 0 0 1px #2196F3;
-      }
-      
-      input:checked + .slider:before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
-      }
-      
-      /* 开启状态下的样式 */
-      #contentOpen {
-        display: none;
-      }
-      
-      input:checked + .slider + #contentOpen {
-        display: block;
-      }
-      
-      /* 关闭状态下的样式 */
-      input:not(:checked) + .slider + #contentClose {
-        display: block;
-      }
-      
-      /* 添加动画效果 */
-      .switch:hover {
-        opacity: 0.7;
-      }
-      
-    *,
-    *:before,
-    *:after {
-        box-sizing: inherit;
-    }
-    
-    *:before,
-    *:after {
-        content: "";
-        position: absolute;
-    }
-    @-webkit-keyframes flame {
-        50% {
-            -webkit-transform: scale(0.8) rotate(45deg);
-                    transform: scale(0.8) rotate(45deg);
-        }
-    }
-    
-    @keyframes flame {
-        50% {
-            -webkit-transform: scale(0.8) rotate(45deg);
-                    transform: scale(0.8) rotate(45deg);
-        }
-    }
-    .confetti {
-        position: absolute;
-        z-index: 999;
-    }
-    
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+*:before,
+*:after {
+  content: "";
+  position: absolute;
+}
+@-webkit-keyframes flame {
+  50% {
+    -webkit-transform: scale(0.8) rotate(45deg);
+            transform: scale(0.8) rotate(45deg);
+  }
+}
+
+@keyframes flame {
+  50% {
+    -webkit-transform: scale(0.8) rotate(45deg);
+            transform: scale(0.8) rotate(45deg);
+  }
+}
+.confetti {
+  position: absolute;
+  z-index: 999;
+}
+
 .confetti .rotate {
   -webkit-animation: driftRotate 1s infinite both ease-in-out;
           animation: driftRotate 1s infinite both ease-in-out;
