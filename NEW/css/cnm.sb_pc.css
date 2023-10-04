@@ -7,6 +7,7 @@
 body,html{
 	text-align: center;
 	font-family: "宋体";
+	cursor: url(../img/normal.cur),default;
 }
 a{
 	text-decoration: none;
@@ -105,7 +106,7 @@ li{
 	height: 65px;
 	border-radius: 8px;
 	overflow: hidden;
-	cursor: pointer;
+	cursor: url(../img/No_Disponible.cur),pointer;
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -131,7 +132,7 @@ li{
 	line-height: 40px;
 	text-align: left;
 	background-color: #f6f7ff;
-	cursor: pointer;
+	cursor: url(../img/No_Disponible.cur),pointer;
 }
 #cleft li:nth-child(1){
 	background-color: #ffffff;
@@ -252,7 +253,7 @@ li{
 	font-size: 13px;
 	line-height: 36px;
 	letter-spacing: 2px;
-	cursor: pointer;
+	cursor: url(../img/No_Disponible.cur),pointer;
 	transition: 0.5s;
 }
 .nav01_but01{
@@ -454,8 +455,7 @@ li{
 	color: rgba(40,40,40,0.9);
 	border-bottom: 1px dashed rgba(40,40,40,0.2);
 }
-.mb03{
-}
+
 .mb03>p{
 	border: 0px;
 	clear: left;
@@ -467,7 +467,7 @@ li{
 	border-radius: 6px;
 	text-align: center;
 	background-color: rgba(245,245,245,0.5);
-	cursor: pointer;
+	cursor: url(../img/No_Disponible.cur),pointer;
 	transition: 0.5s;
 }
 .mb03>div:hover{
@@ -745,7 +745,7 @@ li{
 	margin: auto;
 	z-index: 5;
 	box-shadow: 0px 0px 10px rgba(40,40,40,0.2);
-	cursor: pointer;
+	cursor: url(../img/No_Disponible.cur),pointer;
 }
 .nav05_top_fj img{
 	width: 30px;

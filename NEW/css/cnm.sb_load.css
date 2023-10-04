@@ -1,5 +1,6 @@
 body,html{
 	background-color: #F9F9F9;
+	cursor: url(../img/normal.cur),default;
 }
 #pc{
 	position: fixed;
