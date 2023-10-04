@@ -8,7 +8,7 @@ const galleryImages =document.querySelectorAll('.gallery-img');
     var a_idx = 0;
     window.onclick = function (event) {
         var a = new Array("❤赖皮❤", "❤赖床❤", "❤姓赖的❤", "❤我草泥马❤", "❤妈的❤", "❤你妈死了❤", "❤我一眼就看出了答案❤", "❤你妈❤", "❤老赖❤",
-            "❤莱斯❤", "❤赖榆❤", "❤太酷啦❤");
+            "❤莱斯❤", "❤赖皮❤", "❤太酷啦❤");
 
         var heart = document.createElement("b"); //创建b元素
         heart.onselectstart = new Function('event.returnValue=false'); //防止拖动
