@@ -52,7 +52,7 @@ body {
 /* 创建一个 section5 的样式，设置背景颜色和背景图片 */
 .section5 {
     background-color: lightgreen;
-    background: url(https://t.mwm.moe/pc);
+    background: url("https://api.yimian.xyz/img");/* 备用接口https://t.mwm.moe/pc */
     text-align: center;
 }
 
@@ -178,22 +178,22 @@ body {
 /* 头像容器层 */
 .avatar-wrapper {
     position: relative;
-    width: 150px;
-    height: 150px;
+    height: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: fill;
 }
 
 /* 头像 */
 .avatar {
     width: 200px;
     height: 200px;
-    background-image: url(avatar.jpg);
     background-size: cover;
     background-position: center;
     clip-path: circle(50% at 50% 50%);
+
 }
 
 /* 姓名 */
@@ -256,5 +256,28 @@ a{
     border-radius: 5px;			/* 设置圆角矩形 */
     letter-spacing: 2px;		/* 设置文字间距 */
   }
+  
+.rainbow {
+    background: linear-gradient(to right, red, yellow, lime, aqua, blue, fuchsia) 0 / 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hue 6s infinite;
+  }
+  @keyframes hue {
+    from {
+      filter: hue-rotate(0deg);
+    }
+    to {
+      filter: hue-rotate(360deg);
+    }
+  }
 
+  .h8 {
+    font-size: 60px;
+    font-weight: bold
+  }
+
+
+  /* 注：此文档由1046617962编写 */
   

@@ -321,7 +321,7 @@ a{
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-image: url(https://t.mwm.moe/pc);
+	background-image: url("https://api.yimian.xyz/img");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: -550px;
