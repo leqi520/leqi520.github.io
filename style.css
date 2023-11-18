@@ -28,25 +28,25 @@ body {
 /* 创建一个 section1 的样式，设置背景颜色和背景图片 */
 .section1 {
     background-color: rebeccapurple;
-    background: url("img/1.jpg");
+    background: url(http://m.qpic.cn/psc?/V516qY0N20YWx30A9xcL45lXDR4NQNZT/ruAMsa53pVQWN7FLK88i5j6CvEZx6UQVdsj.lpD1YhrQQrzcjxrYcVUTGr0gU04q2ZiH0obET9aGfkIOUrHp3fzGokf5HLkY.BXPI22rsZs!/b&bo=gAc4BIAHOAQBByA!&rf=viewer_4);
 }
 
 /* 创建一个 section2 的样式，设置背景颜色和背景图片 */
 .section2 {
     background-color: skyblue;
-    background: url("img/2.jpg");
+    background: url(http://m.qpic.cn/psc?/V516qY0N20YWx30A9xcL45lXDR4NQNZT/ruAMsa53pVQWN7FLK88i5j6CvEZx6UQVdsj.lpD1YhpOEOyeHvbmYd.2Wwccbr*scXf7Wekl2sTHT0ZMWxWNB6KxeHxl*pi9HesD8.AUcQ8!/b&bo=AAVVAwAFVQMBFzA!&rf=viewer_4&t=5);
 }
 
 /* 创建一个 section3 的样式，设置背景颜色和背景图片 */
 .section3 {
     background-color: red;
-    background: url("img/3.jpg");
+    background: url(http://m.qpic.cn/psc?/V516qY0N20YWx30A9xcL45lXDR4NQNZT/ruAMsa53pVQWN7FLK88i5j6CvEZx6UQVdsj.lpD1YhqnmRbejo3Ttjs5itLefXGBu1kcemzJWJF8kZkiEDbPUESiYKuCI.YurKIOXtv7eU8!/b&bo=gAewBIAHsAQBFzA!&rf=viewer_4);
 }
 
 /* 创建一个 section4 的样式，设置背景颜色和背景图片 */
 .section4 {
     background-color: orange;
-    background: url("img/4.jpg");
+    background: url(http://m.qpic.cn/psc?/V516qY0N20YWx30A9xcL45lXDR4NQNZT/ruAMsa53pVQWN7FLK88i5j6CvEZx6UQVdsj.lpD1YhrSQOsWOmFF9SNoyo61PHu*lD2eQO6.6KqGS5XkuJy6hOcwJlWYE9kKECw8lqVQ.8I!/b&bo=AAgABgAIAAYBNxA!&rf=viewer_4);
 }
 
 /* 创建一个 section5 的样式，设置背景颜色和背景图片 */

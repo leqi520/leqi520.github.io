@@ -36,6 +36,7 @@ li{
 	font-weight: bolder;
 	letter-spacing: 2px;
 }
+/* 开屏动画 */
 #ebg{
 	width: 100%;
 	height: 100%;
@@ -46,6 +47,7 @@ li{
 	background-position: center center;
 	background-repeat: no-repeat;
 }
+/* 内容背景 */
 #ebga{
 	position: fixed;
 	top: 0;
