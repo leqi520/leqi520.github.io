@@ -28,31 +28,31 @@ body {
 /* 创建一个 section1 的样式，设置背景颜色和背景图片 */
 .section1 {
     background-color: rebeccapurple;
-    background: url(http://m.qpic.cn/psc?/V516qY0N20YWx30A9xcL45lXDR4NQNZT/ruAMsa53pVQWN7FLK88i5j6CvEZx6UQVdsj.lpD1YhrQQrzcjxrYcVUTGr0gU04q2ZiH0obET9aGfkIOUrHp3fzGokf5HLkY.BXPI22rsZs!/b&bo=gAc4BIAHOAQBByA!&rf=viewer_4);
+    background: url(https://upload-bbs.miyoushe.com/upload/2023/12/02/274932853/969efef7c2aa0b9c19647d10929a04bf_7810858182784219152.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg);
 }
 
 /* 创建一个 section2 的样式，设置背景颜色和背景图片 */
 .section2 {
     background-color: skyblue;
-    background: url(http://m.qpic.cn/psc?/V516qY0N20YWx30A9xcL45lXDR4NQNZT/ruAMsa53pVQWN7FLK88i5j6CvEZx6UQVdsj.lpD1YhpOEOyeHvbmYd.2Wwccbr*scXf7Wekl2sTHT0ZMWxWNB6KxeHxl*pi9HesD8.AUcQ8!/b&bo=AAVVAwAFVQMBFzA!&rf=viewer_4&t=5);
+    background: url(https://upload-bbs.miyoushe.com/upload/2023/12/02/274932853/1b6af1d024496b5f4e7df1e198ae89b2_1253869074362354979.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg);
 }
 
 /* 创建一个 section3 的样式，设置背景颜色和背景图片 */
 .section3 {
     background-color: red;
-    background: url(http://m.qpic.cn/psc?/V516qY0N20YWx30A9xcL45lXDR4NQNZT/ruAMsa53pVQWN7FLK88i5j6CvEZx6UQVdsj.lpD1YhqnmRbejo3Ttjs5itLefXGBu1kcemzJWJF8kZkiEDbPUESiYKuCI.YurKIOXtv7eU8!/b&bo=gAewBIAHsAQBFzA!&rf=viewer_4);
+    background: url(https://upload-bbs.miyoushe.com/upload/2023/12/02/274932853/953337f00d6469f2d28f361ec7644a3c_7588249586345967059.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg);
 }
 
 /* 创建一个 section4 的样式，设置背景颜色和背景图片 */
 .section4 {
     background-color: orange;
-    background: url(http://m.qpic.cn/psc?/V516qY0N20YWx30A9xcL45lXDR4NQNZT/ruAMsa53pVQWN7FLK88i5j6CvEZx6UQVdsj.lpD1YhrSQOsWOmFF9SNoyo61PHu*lD2eQO6.6KqGS5XkuJy6hOcwJlWYE9kKECw8lqVQ.8I!/b&bo=AAgABgAIAAYBNxA!&rf=viewer_4);
+    background: url(https://upload-bbs.miyoushe.com/upload/2023/12/02/274932853/da09357269d84e50583c4c55eb9bf502_1420024168792104493.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg);
 }
 
 /* 创建一个 section5 的样式，设置背景颜色和背景图片 */
 .section5 {
     background-color: lightgreen;
-    background: url("https://api.yimian.xyz/img");/* 备用接口https://t.mwm.moe/pc */
+    background: url("https://cdn.seovx.com/d/?mom=302");/* 备用接口https://t.mwm.moe/pc */  /*备用接口二https://api.yimian.xyz/img*/
     text-align: center;
 }
 
@@ -198,7 +198,7 @@ body {
 
 /* 姓名 */
 .name {
-    font-size: 9em;
+    font-size: 10em;
     font-weight: bold;
     color: #ccdaa6a2;
     text-align: center;
@@ -258,11 +258,11 @@ a{
   }
   
 .rainbow {
-    background: linear-gradient(to right, red, yellow, lime, aqua, blue, fuchsia) 0 / 50%;
+    background: #0de9d6e5;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: hue 6s infinite;
+    animation: hue 8s infinite;
   }
   @keyframes hue {
     from {
