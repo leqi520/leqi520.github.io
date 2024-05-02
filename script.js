@@ -48,7 +48,7 @@ function changeColor(index) {
 }
 
 // 获取头像数据的API链接
-const apiURL = "https://tenapi.cn/bilibili/?uid=1032285416";
+const apiURL = "";//这个api已弃用https://api.bilibili.com/x/space/app/index?mid=1032285416新接口暂未对接
 
 // 获取头像数据并处理显示
 fetch(apiURL)
