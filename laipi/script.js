@@ -47,18 +47,3 @@ const galleryImages =document.querySelectorAll('.gallery-img');
         .random() * 255)) + ")";
     }
 }());
-
-/* 声音模块 */
-var audio = document.getElementById("sound");
-
-function changeImageAndPlaySound() {
-  var image = document.querySelector(".profile-img");
-  image.src = "https://upload-bbs.miyoushe.com/upload/2023/10/03/274932853/f89a6a2e15589d50c6201068982e745d_473010695974828282.png";
-  audio.play(); // 播放音频
-}
-
-function restoreImage() {
-  var image = document.querySelector(".profile-img");
-  image.src = "https://upload-bbs.miyoushe.com/upload/2023/10/03/274932853/fd6a7689475f362244940254663665af_9093070136611149859.png";
-}
-

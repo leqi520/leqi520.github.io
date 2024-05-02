@@ -1,0 +1,90 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  .svg-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../su/svg/724.svg);
+    background-size: cover; /* 背景图片缩放以铺满整个元素 */
+    background-repeat: no-repeat; /* 不重复背景图片 */
+    background-position: center center; /* 背景图片居中 */
+    z-index: -1; /* 确保SVG背景在内容之下 */
+  }
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll; /* 允许垂直滚动 */
+    -webkit-overflow-scrolling: touch; /* 优化移动设备上的滚动 */
+  }
+
+
+/* 头像 */  
+.heroimg {  
+  /* 初始尺寸（在大屏幕上） */  
+  height: 350px;  
+  width: 350px;  
+  margin: 0 auto;  
+  position: relative; /* 相对于其正常位置进行定位 */  
+  transition: transform 0.6s ease; /* 可选：添加过渡效果使缩放更平滑 */  
+}  
+
+.heroimg .heroimg__poto {  
+  border-radius: 100%;  
+  height: 100%; /* 继承父元素的尺寸 */  
+  width: 100%; /* 继承父元素的尺寸 */  
+  object-fit: cover;  
+  box-shadow: 20px 20px 1px 1px #ddaa01;  
+  border: 7px solid;  
+}  
+
+/* 当视口宽度小于或等于 450px（例如，超小屏幕）时 */  
+@media (max-width: 450px) {  
+.heroimg {  
+    /* 移除相对定位和相关位移 */  
+    position: static;  
+    top: auto;  
+    left: auto;  
+      
+    /* 缩小 5% */  
+    transform: scale(0.95);  
+      
+    /* 根据需要调整边框和阴影 */  
+    /* 例如，你可能需要稍微减少 box-shadow 的大小以保持视觉一致性 */  
+}  
+  
+/* 如果需要，也可以调整图片内部的阴影和边框 */  
+.heroimg .heroimg__poto {  
+    box-shadow: 19px 19px 1px 1px #ddaa01; /* 稍微减少阴影大小 */  
+    border: 6.65px solid; /* 稍微减少边框大小以保持比例 */  
+}  
+}  
+
+/* 当视口宽度大于 450px 且小于或等于 800px（例如，手机和平板）时 */  
+@media (min-width: 0px) and (max-width: 1400px) {  
+  .heroimg {
+    top: 40px;
+  }
+/* 在这个范围内，你可能不需要额外的样式调整，除非你有特定的需求 */  
+}  
+
+/* 当视口宽度大于 800px（例如，电脑显示器）时 */  
+@media (min-width: 1400px) {  
+.heroimg {  
+    /* 添加相对定位和相关位移 */  
+    position: relative;  
+    top: 85px;  
+    left: 12%; /* 或者使用 calc() 来确保图片始终在视口中心 */  
+      
+    /* 移除在小屏幕上应用的 scale 变换 */  
+    transform: scale(1);  
+}  
+}
