@@ -47,37 +47,6 @@ function changeColor(index) {
     lis[index].className = 'active'
 }
 
-// 获取头像数据的API链接
-const apiURL = "";//这个api已弃用https://api.bilibili.com/x/space/app/index?mid=1032285416新接口暂未对接
-
-// 获取头像数据并处理显示
-fetch(apiURL)
-    .then(response => response.json()) // 解析API响应为JSON
-    .then(data => {
-        if (data.code === 200) {
-            const avatarURL = data.data.avatar;
-            displayAvatar(avatarURL);
-        } else {
-            console.error("无法获取头像数据。");
-        }
-    })
-    .catch(error => {
-        console.error("发生错误：", error);
-    });
-
-// 将头像显示在<div>元素中
-function displayAvatar(avatarURL) {
-    const avatarContainer = document.getElementById("avatar");
-    const avatarImage = document.createElement("img"); // 创建一个<img>元素
-    avatarImage.src = avatarURL; // 设置<img>元素的src属性为头像URL
-
-    // 添加自适应样式
-    avatarImage.style.maxWidth = "100%"; // 图片最大宽度为容器宽度
-    avatarImage.style.height = "100%"; // 图片高度自适应
-
-    avatarContainer.appendChild(avatarImage); // 将<img>元素添加到<div>中显示
-}
-
 
 // 时间
 function showCurrentTime() {
