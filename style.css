@@ -193,7 +193,7 @@ body {
     background-size: cover;
     background-position: center;
     clip-path: circle(50% at 50% 50%);
-    background-image: url("https://i2.hdslb.com/bfs/face/76528104eb42a80de4c188a12df6a972b5b05221.webp");
+    background: url("https://i2.hdslb.com/bfs/face/76528104eb42a80de4c188a12df6a972b5b05221.webp");
 
 }
 
