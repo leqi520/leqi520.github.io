@@ -184,19 +184,19 @@ body {
     justify-content: center;
     align-items: center;
     object-fit: fill;
+
 }
 
 /* 头像 */
-.avatar {
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    clip-path: circle(50% at 50% 50%);
-    background: url("https://i2.hdslb.com/bfs/face/76528104eb42a80de4c188a12df6a972b5b05221.webp");
-
+.avatar {  
+    width: 200px;  
+    height: 200px;  
+    background-image: url(/img/touxiang.jpg); /* 添加背景图片 */  
+    background-size: cover;  
+    background-position: center;  
+    clip-path: circle(50% at 50% 50%);  
+    border-radius: 50%; /* 如果你想要一个圆形的头像，可以添加这个 */  
 }
-
 /* 姓名 */
 .name {
     font-size: 10em;
