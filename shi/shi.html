@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>史</title>
+<style>
+/* 使用视窗单位（vw）设置字体大小，使得字体大小随着屏幕宽度自适应 */
+.animated-text {
+font-size: 5vw; /* 假设你希望字体大小为视窗宽度的5% */
+margin: 100px auto;
+text-align: center;
+opacity: 0;
+animation: fadeIn 2s forwards, colorChange 5s infinite;
+}
+
+body {  
+background: url("https://cdn.seovx.com/d/?mom=302") no-repeat center center fixed;   
+-webkit-background-size: cover;  
+-moz-background-size: cover;  
+-o-background-size: cover;  
+background-size: cover;  
+}  
+
+.marquee {  
+position: fixed;  
+top: 0;  
+left: 50%; /* Center horizontally */  
+transform: translateX(-50%); /* Move left to center */  
+width: 100vw; /* Viewport width */  
+max-width: 100%; /* Prevent too wide on narrow screens */  
+height: 35px;  
+overflow: hidden;  
+background-color: #66CCFF;  
+z-index: 1000;  
+display: flex;  
+align-items: center;  
+padding: 0 10px;  
+box-sizing: border-box;  
+}  
+
+.marquee p {  
+margin: 0;  
+font-size: 26px;  
+display: inline-block;  
+padding-left: 100%; /* Initial offset to start outside the viewport */  
+box-sizing: border-box; /* Include padding in the element's total width and height */  
+animation: marquee 8s linear infinite;  
+white-space: nowrap; /* Prevent text wrapping to multiple lines */  
+}
+
+@keyframes marquee {  
+0%   { transform: translateX(100%); }  
+100% { transform: translateX(-100%); } /* Move back to the middle */  
+}  
+
+/* 淡入动画效果 */
+@keyframes fadeIn {
+from { opacity: 0; transform: scale(0.5); }
+to { opacity: 1; transform: scale(1); }
+}
+/* 颜色变化动画效果 */
+@keyframes colorChange {
+0% { color: red; }
+20% { color: orange; }
+40% { color: yellow; }
+60% { color: green; }
+80% { color: blue; }
+100% { color: purple; }
+}
+</style>
+</head>
+<body>
+    <div id="marquee" class="marquee"><p>此时，一坨大便走进了房间！</p></div>
+<div class="animated-text">你是史吗！</div>
+</body>
+</html>
