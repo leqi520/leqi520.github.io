@@ -59,9 +59,9 @@ document.oncut = function (event) {
 }
 //禁止f12
 function fuckyou() {
-    window.open("../shi.html", "_blank"); //新窗口打开页面
+    window.open("/", "_blank"); //新窗口打开页面
     window.close(); //关闭当前窗口(防抽)
-    window.location = "/404.html"; // about:blank  将当前窗口跳转置空白页
+    window.location = "../shi.html"; // about:blank  将当前窗口跳转置空白页
 }
 //禁止Ctrl+U
 var arr = [123, 17, 18];
