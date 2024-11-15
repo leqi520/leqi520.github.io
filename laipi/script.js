@@ -47,3 +47,23 @@ const galleryImages =document.querySelectorAll('.gallery-img');
         .random() * 255)) + ")";
     }
 }());
+
+
+function changeImageAndPlayAudio() {
+    var img = document.getElementById('profileImg');
+    var audio = document.getElementById('audioPlayer');
+
+    img.src = 'https://upload-bbs.miyoushe.com/upload/2023/10/03/274932853/f89a6a2e15589d50c6201068982e745d_473010695974828282.png';
+    if (audio.paused) {
+        audio.play();
+    }
+}
+
+function revertImageAndStopAudio() {
+    var img = document.getElementById('profileImg');
+    var audio = document.getElementById('audioPlayer');
+
+    img.src = 'https://upload-bbs.miyoushe.com/upload/2023/10/03/274932853/fd6a7689475f362244940254663665af_9093070136611149859.png';
+    audio.pause();
+    audio.currentTime = 0; // 重置音频到开始位置
+}

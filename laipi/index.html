@@ -10,8 +10,13 @@
     <div class="container">
         <div class="header">
             <h1>赖皮网(点击头像有惊喜)</h1>
-            <img alt="赖皮头像" src="https://upload-bbs.miyoushe.com/upload/2023/10/03/274932853/fd6a7689475f362244940254663665af_9093070136611149859.png" onMouseOver="this.src='https://upload-bbs.miyoushe.com/upload/2023/10/03/274932853/f89a6a2e15589d50c6201068982e745d_473010695974828282.png'" onMouseOut="this.src='https://upload-bbs.miyoushe.com/upload/2023/10/03/274932853/fd6a7689475f362244940254663665af_9093070136611149859.png'" class="profile-img">
-        </div>
+            <img alt="赖皮头像" src="https://upload-bbs.miyoushe.com/upload/2023/10/03/274932853/fd6a7689475f362244940254663665af_9093070136611149859.png" 
+            id="profileImg"
+            onMouseOver="changeImageAndPlayAudio()"
+            onMouseOut="revertImageAndStopAudio()"
+            class="profile-img">
+       <audio id="audioPlayer" src="https://img.tukuppt.com/newpreview_music/01/66/45/63c0e81e4ebce324.mp3" style="display: none;"></audio>
+   </div>
         <div class="about-section">
             <h2 class="red">赖皮的话</h2>
             <p>大家好，
